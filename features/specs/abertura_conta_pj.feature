@@ -12,5 +12,5 @@
     Then terei informações sobre os <documentos> válidos de meus sócios para abertura de conta Pejota
 
     Examples:
-    | documentos |
-    | São válidos os documentos RG, CNH ou RNE (no caso de estrangeiros).|
+    |documentos|
+    |"São válidos os documentos RG, CNH ou RNE (no caso de estrangeiros)."|

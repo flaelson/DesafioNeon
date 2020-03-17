@@ -13,10 +13,14 @@ When("clicar em Abra sua Conta") do
 end
 
 When("clicar em Conferir lista") do
+  page.current_window
+  page.hast_test?("Conferir a Lista")
+  page = Abertura.new
   page.ButtonConferirLista.click
 end
 
-Then("terei informações sobre os <string> válidos de meus sócios para abertura de conta Pejota") do
+Then("terei informações sobre os {string} válidos de meus sócios para abertura de conta Pejota") do |documentos|
+  page.DocIdentidade.click
   page.has_text?(documentos)
   expect(page.has_text?(documentos)).to eq true
 end

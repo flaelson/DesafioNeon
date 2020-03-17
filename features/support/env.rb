@@ -2,7 +2,7 @@ require "rubygems"
 require "capybara"
 require "capybara/cucumber"
 require "capybara/dsl"
-require "webdriver"
+require "webdrivers"
 require "rspec"
 
 Capybara.configure do |config|

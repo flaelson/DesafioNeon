@@ -10,10 +10,10 @@ class Abertura
   end
 
   def ButtonConferirLista
-    page.has_title?("Cadastro::A conta que tira sua empresa do papel::Neon")
-    page.new_page = window_opened_by do
-      find("#W7BIke389f5y9Crcpp > section.steppy.is-active > div > div:nth-child(3) > footer > div > div > div > button")
-    end
+    page.current_window
+    page.hast_test?("Conferir a Lista")
+    page = Abertura.new
+    find("#W7BIke389f5y9Crcpp > section.steppy.is-active > div > div:nth-child(3) > footer > div > div > div > button")
   end
 
   def DocIdentidade

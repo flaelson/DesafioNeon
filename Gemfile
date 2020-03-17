@@ -4,7 +4,7 @@ source "http://rubygems.org"
 
 gem "capybara"
 gem "cucumber"
-gem "selenium-webdriver"
+gem "webdrivers"
 gem "rspec"
 
 # gem "rails"
